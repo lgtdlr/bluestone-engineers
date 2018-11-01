@@ -36,3 +36,5 @@ hs_err_pid*
 /build/
 .settings
 .project
+minecraft-*_Client.launch
+minecraft-*_Server.launch
