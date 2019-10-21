@@ -1,1 +1,4 @@
 item.bluestone_dust.name=Bluestone
+
+//blocks
+tile.bluestone_block.name= Block of Bluestone
