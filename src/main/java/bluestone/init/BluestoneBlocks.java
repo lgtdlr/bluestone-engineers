@@ -11,7 +11,7 @@ import net.minecraft.block.material.Material;
 
 public class BluestoneBlocks {
 	public static final List<Block> BLOCKS = new ArrayList<Block>();
-	public static final Block BLUESTONE_BLOCK = new BluestoneBlock("bluestone_block", Material.ROCK, ModItems.BLUESTONE_DUST, 1, 5).setHardness(3f).setResistance(5f).setCreativeTab(Main.tabBluestone);
-
-
+	public static final Block BLUESTONE_BLOCK = new BluestoneBlock("bluestone_block", Material.ROCK, ModItems.BLUESTONE_DUST, 1, 5).setHardness(3f).setResistance(5f).setCreativeTab(Main.tabBluestone).setLightLevel(1.0F);
+	
+	
 }
