@@ -1,4 +1,8 @@
+//items
 item.bluestone_dust.name=Bluestone
 
 //blocks
-tile.bluestone_block.name= Block of Bluestone
+tile.bluestone_block.name=Bluestone Ore
+
+//tabs
+itemGroup.tab_bluestone=Bluestone

@@ -1,5 +1,7 @@
 package bluestone;
 
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -7,7 +9,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.Mod.EventHandler;
-
+import bluestone.init.ModItems;
 import bluestone.proxy.CommonProxy;
 import bluestone.util.Reference;
 
@@ -26,13 +28,20 @@ public class Main {
 	}
 	
 	@EventHandler
-	public static void PreInit(FMLInitializationEvent event) {
+	public static void Init(FMLInitializationEvent event) {
 		
 	}
 	
 	@EventHandler
-	public static void PreInit(FMLPostInitializationEvent event) {
+	public static void PostInit(FMLPostInitializationEvent event) {
 		
 	}
 	
+	public static CreativeTabs tabBluestone = new CreativeTabs("tab_bluestone") {
+		
+		@Override
+		public ItemStack getTabIconItem() {
+			return new ItemStack(ModItems.BLUESTONE_DUST);
+		}
+	};
 }
