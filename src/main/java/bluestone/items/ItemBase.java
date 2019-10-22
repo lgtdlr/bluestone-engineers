@@ -3,7 +3,6 @@ package bluestone.items;
 import bluestone.Main;
 import bluestone.init.ModItems;
 import bluestone.util.IHasModel;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
 public class ItemBase extends Item implements IHasModel {
