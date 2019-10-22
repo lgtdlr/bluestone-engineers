@@ -20,8 +20,13 @@ public class BluestoneBlockBase extends Block implements IHasModel {
 		super(material);
 		setUnlocalizedName(name);
 		setRegistryName(name);
+<<<<<<< HEAD
 		setCreativeTab(CreativeTabs.REDSTONE);
 
+=======
+		setCreativeTab(Main.tabBluestone);
+		
+>>>>>>> branch 'master' of https://github.com/uprm-ciic4010-f19/minecraft-project-redstone-engineers.git
 		BluestoneBlocks.BLOCKS.add(this);
 		ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
