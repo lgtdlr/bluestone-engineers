@@ -2,7 +2,8 @@
 item.bluestone_dust.name=Bluestone
 
 //blocks
-tile.bluestone_block.name=Bluestone Ore
+tile.bluestone_block.name=Bluestone Block
+tile.bluestone_ore.name=Bluestone Ore
 
 //tabs
 itemGroup.tab_bluestone=Bluestone
