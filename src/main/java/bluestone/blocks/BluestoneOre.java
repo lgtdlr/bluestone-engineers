@@ -14,30 +14,14 @@ public class BluestoneOre extends BluestoneBlockBase {
 	
 	public BluestoneOre(String name, Material material) {
 		super(name, material);
-		setSoundType(SoundType.STONE);
-		setHardness(5.5F);
-		setResistance(15.0F);
-		setHarvestLevel("pickaxe", 2);
-		setLightLevel(1.0F);
-
 	}
 
 	public BluestoneOre(String name, Material material, Item toDrop) {
 		this(name, material, toDrop, 1, 1);
-		setSoundType(SoundType.STONE);
-		setHardness(5.5F);
-		setResistance(15.0F);
-		setHarvestLevel("pickaxe", 2);
-		setLightLevel(1.0F);
 	}
 
 	public BluestoneOre(String name, Material material, Item toDrop, int dropAmount) {
-		this(name, material, toDrop, dropAmount, dropAmount);
-		setSoundType(SoundType.STONE);
-		setHardness(5.5F);
-		setResistance(15.0F);
-		setHarvestLevel("pickaxe", 2);
-		setLightLevel(1.0F);
+		this(name, material, toDrop, dropAmount, dropAmount);	
 	}
 
 	public BluestoneOre(String name, Material material, Item itemDrop,int minDrop,int maxDrop) {
