@@ -1,0 +1,25 @@
+{"type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "   ",
+        " R ",
+        "   "
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "bm:bluestone_ore",
+            "data": 0
+        }
+    },
+   
+    "result":
+    {
+        "item": "bm:bluestone_dust",
+        "count": 9,
+        "data": 0
+    }
+}
