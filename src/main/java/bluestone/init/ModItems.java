@@ -9,7 +9,10 @@ import bluestone.items.usable.ToolHoe;
 import bluestone.items.usable.ToolPickaxe;
 import bluestone.items.usable.ToolSpade;
 import bluestone.items.usable.ToolSword;
+import bluestone.items.wearable.ArmorBase;
+import bluestone.util.Reference;
 import net.minecraft.init.SoundEvents;
+import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
@@ -26,9 +29,13 @@ public class ModItems {
 	
 	//Mats
 	public static final ToolMaterial TOOL_MATERIAL_BLUESTONE = EnumHelper.addToolMaterial("material_bluestone", 3, 131, 6.0F, 3.0F, 22);
-	public static final ArmorMaterial ARMOR_MATERIAL_BLUESTONE = EnumHelper.addArmorMaterial("material_bluestone", ":bluestone_dust", 10, 
+	public static final ArmorMaterial ARMOR_MATERIAL_BLUESTONE = EnumHelper.addArmorMaterial("material_bluestone", Reference.MOD_ID + ":bluestone", 10, 
 			                                                     new int[]{2, 5, 6, 2}, 25, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 0.0F);
 	//Wearable
+	public static final Item BLUESTONE_HELMET = new ArmorBase("bluestone_helmet", ARMOR_MATERIAL_BLUESTONE, 1, EntityEquipmentSlot.HEAD);
+	public static final Item BLUESTONE_CHESTPLATE = new ArmorBase("bluestone_chestplate", ARMOR_MATERIAL_BLUESTONE, 1, EntityEquipmentSlot.CHEST);
+	public static final Item BLUESTONE_LEGGINGS = new ArmorBase("bluestone_leggings", ARMOR_MATERIAL_BLUESTONE, 2, EntityEquipmentSlot.LEGS);
+	public static final Item BLUESTONE_BOOTS = new ArmorBase("bluestone_boots", ARMOR_MATERIAL_BLUESTONE, 1, EntityEquipmentSlot.FEET);
 	
 	//Usable
 	public static final ItemSword BLUESTONE_SWORD = new ToolSword("bluestone_sword", TOOL_MATERIAL_BLUESTONE);

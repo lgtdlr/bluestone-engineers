@@ -5,6 +5,10 @@ item.bluestone_shovel.name=Bluestone Shovel
 item.bluestone_pickaxe.name=Bluestone Pickaxe
 item.bluestone_axe.name=Bluestone Axe
 item.bluestone_hoe.name=Bluestone Hoe
+item.bluestone_helmet.name=Bluestone Helmet
+item.bluestone_chestplate.name=Bluestone Chestplate
+item.bluestone_leggings.name=Bluestone Leggings
+item.bluestone_boots.name=Bluestone Boots
 
 //blocks
 tile.bluestone_block.name=Bluestone Block
