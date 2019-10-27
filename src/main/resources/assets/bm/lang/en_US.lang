@@ -1,5 +1,10 @@
 //items
 item.bluestone_dust.name=Bluestone
+item.bluestone_sword.name=Bluestone Sword
+item.bluestone_shovel.name=Bluestone Shovel
+item.bluestone_pickaxe.name=Bluestone Pickaxe
+item.bluestone_axe.name=Bluestone Axe
+item.bluestone_hoe.name=Bluestone Hoe
 
 //blocks
 tile.bluestone_block.name=Bluestone Block
