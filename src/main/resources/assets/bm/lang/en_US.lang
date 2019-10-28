@@ -13,6 +13,7 @@ item.bluestone_boots.name=Bluestone Boots
 
 //blocks
 tile.bluestone_block.name=Bluestone Block
+tile.bluestone_ore.name=Bluestone Ore
 tile.bluestone_torch.name=Bluestone Torch
 
 //tabs
