@@ -46,5 +46,6 @@ public class ModItems {
 	
 	//Custom Items
 	public static final Item BLUESTONE_DUST = new ItemBase("bluestone_dust");
+	public static final Item BLUESTONE_INGOT = new ItemBase("bluestone_ingot");
 	
 }

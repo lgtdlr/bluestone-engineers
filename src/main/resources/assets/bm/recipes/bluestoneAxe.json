@@ -1,0 +1,18 @@
+{"type": "minecraft:crafting_shapeless",
+   
+    "ingredients": [
+    {
+    	"item": "bm:bluestone_dust"
+    },
+    {
+    	"item": "minecraft:iron_axe"
+    }
+    ],
+   
+    "result":
+    {
+        "item": "bm:bluestone_axe",
+        "count": 1,
+        "data": 0
+    }
+}

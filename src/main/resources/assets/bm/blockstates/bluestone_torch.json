@@ -1,0 +1,12 @@
+ {
+
+  "variants": {
+  	"normal": {"model": "bm:bluestone_torch"},
+    "facing=up": { "model": "bm:bluestone_torch" },
+    "facing=east": { "model": "bm:bluestone_torch" },
+    "facing=south": { "model": "bm:bluestone_torch", "y": 90 },
+    "facing=west": { "model": "bm:bluestone_torch", "y": 180 },
+    "facing=north": { "model": "bm:bluestone_torch", "y": 270 }
+  }
+
+}

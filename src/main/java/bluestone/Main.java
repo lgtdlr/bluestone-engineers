@@ -11,7 +11,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import bluestone.init.ModItems;
-import bluestone.init.SmealtingRecipes;
+import bluestone.init.SmeltingRecipes;
 import bluestone.proxy.CommonProxy;
 import bluestone.util.Reference;
 import bluestone.world.Generator;
@@ -32,7 +32,7 @@ public class Main {
 	
 	@EventHandler
 	public static void Init(FMLInitializationEvent event) {
-		SmealtingRecipes.init();
+		SmeltingRecipes.init();
 	}
 	
 	@EventHandler

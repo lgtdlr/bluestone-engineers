@@ -1,5 +1,6 @@
 //items
 item.bluestone_dust.name=Bluestone
+item.bluestone_ingot.name=Bluestone Ingot
 item.bluestone_sword.name=Bluestone Sword
 item.bluestone_shovel.name=Bluestone Shovel
 item.bluestone_pickaxe.name=Bluestone Pickaxe
@@ -12,7 +13,7 @@ item.bluestone_boots.name=Bluestone Boots
 
 //blocks
 tile.bluestone_block.name=Bluestone Block
-tile.bluestone_ore.name=Bluestone Ore
+tile.bluestone_torch.name=Bluestone Torch
 
 //tabs
 itemGroup.tab_bluestone=Bluestone
