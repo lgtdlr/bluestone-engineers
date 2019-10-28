@@ -8,6 +8,6 @@ public class BluestoneTorch extends BluestoneBlockTorchBase {
 	public BluestoneTorch(String name, Material material) {
 		super(name, material);
 		setSoundType(SoundType.WOOD);
-		setLightLevel(10.0F);
+		setLightLevel(1.0F);		
 	}
 }
