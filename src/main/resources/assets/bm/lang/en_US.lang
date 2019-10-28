@@ -10,6 +10,7 @@ item.bluestone_helmet.name=Bluestone Helmet
 item.bluestone_chestplate.name=Bluestone Chestplate
 item.bluestone_leggings.name=Bluestone Leggings
 item.bluestone_boots.name=Bluestone Boots
+item.bluestone_bow.name=Bluestone Bow
 
 //blocks
 tile.bluestone_block.name=Bluestone Block
