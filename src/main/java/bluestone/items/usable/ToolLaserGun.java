@@ -18,9 +18,9 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.world.World;
 
-public class ToolBow extends ItemBow implements IHasModel {
+public class ToolLaserGun extends ItemBow implements IHasModel {
 	
-	public ToolBow (String name) {
+	public ToolLaserGun (String name) {
 		super();
 		setUnlocalizedName(name);
 		setRegistryName(name);

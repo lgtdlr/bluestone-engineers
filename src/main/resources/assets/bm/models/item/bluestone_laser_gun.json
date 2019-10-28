@@ -1,6 +1,6 @@
 {
    "parent": "item/handheld",
    "textures": {
-       "layer0": "bm:items/bluestone_bow"
+       "layer0": "bm:items/bluestone_laser_gun"
    }
 }
