@@ -1,7 +1,7 @@
  {
 
   "variants": {
-  	"normal": {"model": "bm:bluestone_torch"},
+  	"normal": {"model": "bm:bluestone_torch_held"},
     "facing=up": { "model": "bm:bluestone_torch" },
     "facing=east": { "model": "bm:bluestone_torch" },
     "facing=south": { "model": "bm:bluestone_torch", "y": 90 },
