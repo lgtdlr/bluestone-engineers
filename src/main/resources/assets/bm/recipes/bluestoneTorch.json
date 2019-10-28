@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "/"
+    ],
+    "key": {
+        "#": {
+            "item": "bm:bluestone_dust",
+            "data": 0
+        },
+        "/": {
+            "item": "minecraft:stick",
+            "data": 0
+        }
+    },
+    "result": {
+        "item": "bm:bluestone_torch",
+        "count": 4,
+        "data": 0
+    }
+}
