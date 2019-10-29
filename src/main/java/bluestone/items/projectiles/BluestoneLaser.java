@@ -10,25 +10,16 @@ import net.minecraft.item.ItemArrow;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-public class BluestoneLaser extends ItemArrow implements IHasModel {
+public class BluestoneLaser extends ItemArrow{
 	
 	public BluestoneLaser(String name) {
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setCreativeTab(Main.tabBluestone);
-		
-		ModItems.ITEMS.add(this);
 	}
 	
 	@Override
 	public EntityArrow createArrow(World worldIn, ItemStack stack, EntityLivingBase shooter) {
 		EntityLaser entityLaser = new EntityLaser(worldIn, shooter);
 		return entityLaser;
-	}
-	
-	@Override
-	public void registerModels() {
-		Main.proxy.registerItemRenderer(this, 0, "inventory");
-		
 	}
 }

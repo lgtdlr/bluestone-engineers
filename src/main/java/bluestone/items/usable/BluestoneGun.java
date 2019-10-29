@@ -105,7 +105,7 @@ public class BluestoneGun extends ItemBow implements IHasModel {
 
                     if (!worldIn.isRemote)
                     {
-                        ItemArrow itemarrow = (ItemArrow)(itemstack.getItem() instanceof ItemArrow ? itemstack.getItem() : Items.ARROW);
+                        ItemArrow itemarrow = (ItemArrow)(itemstack.getItem() instanceof ItemArrow ? ModItems.BLUESTONE_LASER : ModItems.BLUESTONE_LASER);
                         EntityArrow entityarrow = itemarrow.createArrow(worldIn, itemstack, entityplayer);
                         entityarrow.shoot(entityplayer, entityplayer.rotationPitch, entityplayer.rotationYaw,0.0F, f * 10.0F, 0.1F);
                         entityarrow.shoot(entityplayer, entityplayer.rotationPitch, entityplayer.rotationYaw, 0.0F, f * 3.0F, 1.0F);
