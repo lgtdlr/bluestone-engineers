@@ -2,6 +2,7 @@ package bluestone;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -11,6 +12,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import bluestone.init.ModEntities;
+import bluestone.init.ModFluids;
 import bluestone.init.ModItems;
 import bluestone.init.SmeltingRecipes;
 import bluestone.proxy.CommonProxy;
@@ -29,6 +31,8 @@ public class Main {
 	
 	@EventHandler
 	public static void PreInit(FMLPreInitializationEvent event) {
+		ModFluids.registerFluids();
+		RenderHandler.registerCustomMeshesAndStates();
 		GameRegistry.registerWorldGenerator(new Generator(), 3);
 		ModEntities.registerEntities();
 		RenderHandler.registerEntityRenders();
@@ -51,4 +55,8 @@ public class Main {
 			return new ItemStack(ModItems.BLUESTONE_DUST);
 		}
 	};
+	
+	static {
+		FluidRegistry.enableUniversalBucket();
+	}
 }

@@ -1,0 +1,6 @@
+{
+	"parent": "block/cube_all",
+	"textures": {
+		"all": "bm:blocks/bluestone_magma_still"
+	}
+}
