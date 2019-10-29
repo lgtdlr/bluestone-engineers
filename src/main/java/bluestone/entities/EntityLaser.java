@@ -70,10 +70,11 @@ public class EntityLaser extends EntityArrow {
 			boolean flag = this.pickupStatus == EntityArrow.PickupStatus.ALLOWED
 					|| this.pickupStatus == EntityArrow.PickupStatus.CREATIVE_ONLY
 							&& entityIn.capabilities.isCreativeMode;
-
+			this.setDead();
 			if (this.pickupStatus == EntityArrow.PickupStatus.ALLOWED
 					&& !entityIn.inventory.addItemStackToInventory(this.getArrowStack())) {
 				flag = false;
+				this.setDead();
 			}
 
 			if (flag) {
@@ -82,5 +83,7 @@ public class EntityLaser extends EntityArrow {
 		}
 
 	}
+	
+	
 
 }
