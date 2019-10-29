@@ -1,7 +1,7 @@
 package bluestone.blocks;
 
 import bluestone.Main;
-import bluestone.init.BluestoneBlocks;
+import bluestone.init.ModBlocks;
 import bluestone.init.ModItems;
 import bluestone.util.IHasModel;
 import net.minecraft.block.Block;
@@ -17,7 +17,7 @@ public class BluestoneBlockBase extends Block implements IHasModel {
 
 		setCreativeTab(Main.tabBluestone);
 
-		BluestoneBlocks.BLOCKS.add(this);
+		ModBlocks.BLOCKS.add(this);
 		ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
 

@@ -10,10 +10,12 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.common.Mod.EventHandler;
+import bluestone.init.ModEntities;
 import bluestone.init.ModItems;
 import bluestone.init.SmeltingRecipes;
 import bluestone.proxy.CommonProxy;
 import bluestone.util.Reference;
+import bluestone.util.handlers.RenderHandler;
 import bluestone.world.Generator;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION)
@@ -28,6 +30,8 @@ public class Main {
 	@EventHandler
 	public static void PreInit(FMLPreInitializationEvent event) {
 		GameRegistry.registerWorldGenerator(new Generator(), 3);
+		ModEntities.registerEntities();
+		RenderHandler.registerEntityRenders();
 	}
 	
 	@EventHandler

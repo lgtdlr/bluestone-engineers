@@ -2,7 +2,7 @@ package bluestone.world;
 
 import java.util.Random;
 
-import bluestone.init.BluestoneBlocks;
+import bluestone.init.ModBlocks;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -21,7 +21,7 @@ public class Generator implements IWorldGenerator{
 	}
 	
 	private void generateOverworld(Random random, int chunkX,int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
-		generateOre(BluestoneBlocks.BLUESTONE_ORE.getDefaultState(), world, random, chunkX*16,chunkZ*16, 16, 64, random.nextInt(7)+4, 18);
+		generateOre(ModBlocks.BLUESTONE_ORE.getDefaultState(), world, random, chunkX*16,chunkZ*16, 16, 64, random.nextInt(7)+4, 18);
 	}
 	private void generateOre(IBlockState ore,World world, Random random, int x, int z, int minY, int maxY, int size , int chances) {
 		int deltaY = maxY- minY;

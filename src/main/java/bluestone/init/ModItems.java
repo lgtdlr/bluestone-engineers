@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import bluestone.items.ItemBase;
+import bluestone.items.projectiles.BluestoneLaser;
 import bluestone.items.usable.ToolAxe;
-import bluestone.items.usable.ToolLaserGun;
+import bluestone.items.usable.BluestoneGun;
 import bluestone.items.usable.ToolHoe;
 import bluestone.items.usable.ToolPickaxe;
 import bluestone.items.usable.ToolSpade;
@@ -17,6 +18,7 @@ import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
+import net.minecraft.item.ItemArrow;
 import net.minecraft.item.ItemAxe;
 import net.minecraft.item.ItemBow;
 import net.minecraft.item.ItemHoe;
@@ -45,10 +47,11 @@ public class ModItems {
 	public static final ItemSpade BLUESTONE_SHOVEL = new ToolSpade("bluestone_shovel", TOOL_MATERIAL_BLUESTONE);
 	public static final ItemAxe BLUESTONE_AXE = new ToolAxe("bluestone_axe", TOOL_MATERIAL_BLUESTONE);
 	public static final ItemHoe BLUESTONE_HOE = new ToolHoe("bluestone_hoe", TOOL_MATERIAL_BLUESTONE);
-	public static final ItemBow BLUESTONE_BOW = new ToolLaserGun("bluestone_laser_gun");
+	public static final ItemBow BLUESTONE_GUN = new BluestoneGun("bluestone_laser_gun");
 	
 	//Custom Items
 	public static final Item BLUESTONE_DUST = new ItemBase("bluestone_dust");
 	public static final Item BLUESTONE_INGOT = new ItemBase("bluestone_ingot");
+	public static final ItemArrow BLUESTONE_LASER = new BluestoneLaser("bluestone_laser");
 	
 }

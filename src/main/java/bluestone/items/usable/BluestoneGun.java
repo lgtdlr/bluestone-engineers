@@ -18,13 +18,12 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.world.World;
 
-public class ToolLaserGun extends ItemBow implements IHasModel {
+public class BluestoneGun extends ItemBow implements IHasModel {
 	
-	public ToolLaserGun (String name) {
-		super();
+	public BluestoneGun (String name) {
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setMaxDamage(1000);
+		setMaxDamage(2000);
 		setCreativeTab(Main.tabBluestone);
 		
 		ModItems.ITEMS.add(this);
@@ -58,21 +57,17 @@ public class ToolLaserGun extends ItemBow implements IHasModel {
 	
 	@Override
 	protected boolean isArrow(ItemStack stack){
-        return (stack.getItem() instanceof ItemArrow && stack.getDisplayName().equals("bluestone_charge_pack"));
+        return (stack.getItem() == ModItems.BLUESTONE_LASER);
     }
+	
+	@Override
+	public int getItemEnchantability() {
+		return 25;
+	}
 	
 	public static float getArrowVelocity(int charge)
     {
-		float f = 20.0F;
-//        float f = (float)charge / 20.0F;
-//        f = (f * f + f * 2.0F) / 3.0F;
-//
-//        if (f > 1.0F)
-//        {
-//            f = 1.0F;
-//        }
-
-        return f;
+        return 20.0F;
     }
 	
 	@Override

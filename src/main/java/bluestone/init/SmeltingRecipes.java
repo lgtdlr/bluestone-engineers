@@ -5,6 +5,6 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class SmeltingRecipes {
 public static void init() {
-	GameRegistry.addSmelting(BluestoneBlocks.BLUESTONE_ORE, new ItemStack(ModItems.BLUESTONE_DUST,3 ), 1.5F);
+	GameRegistry.addSmelting(ModBlocks.BLUESTONE_ORE, new ItemStack(ModItems.BLUESTONE_DUST,3 ), 1.5F);
 }
 }

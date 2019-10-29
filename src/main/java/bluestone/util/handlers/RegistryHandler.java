@@ -1,6 +1,6 @@
 package bluestone.util.handlers;
 
-import bluestone.init.BluestoneBlocks;
+import bluestone.init.ModBlocks;
 import bluestone.init.ModItems;
 import bluestone.util.IHasModel;
 import net.minecraft.block.Block;
@@ -20,7 +20,7 @@ public class RegistryHandler {
 	
 	@SubscribeEvent
 	public static void onBlockRegister(RegistryEvent.Register<Block> event) {
-		event.getRegistry().registerAll(BluestoneBlocks.BLOCKS.toArray(new Block[0]));
+		event.getRegistry().registerAll(ModBlocks.BLOCKS.toArray(new Block[0]));
 	}
 	
 	@SubscribeEvent
@@ -31,7 +31,7 @@ public class RegistryHandler {
 			}
 		}
 		
-		for(Block block : BluestoneBlocks.BLOCKS) {
+		for(Block block : ModBlocks.BLOCKS) {
 			if(block instanceof IHasModel) {
 				((IHasModel)block).registerModels();
 			}

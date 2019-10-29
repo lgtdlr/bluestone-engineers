@@ -13,7 +13,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 
 
-public class BluestoneBlocks {
+public class ModBlocks {
 	public static final List<Block> BLOCKS = new ArrayList<Block>();
 	public static final Block BLUESTONE_ORE = new BluestoneOre("bluestone_ore", Material.ROCK);
 	public static final Block BLUESTONE_BLOCK = new BluestoneBlock("bluestone_block", Material.ROCK);
