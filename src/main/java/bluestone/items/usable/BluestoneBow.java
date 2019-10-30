@@ -19,7 +19,7 @@ public class BluestoneBow extends ItemBow implements IHasModel {
 	
 	@Override
 	public int getItemEnchantability() {
-		return 25;
+		return 40;
 	}
 	
 	@Override
