@@ -3,7 +3,6 @@ package bluestone.items.usable;
 import bluestone.Main;
 import bluestone.init.ModItems;
 import bluestone.util.IHasModel;
-import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemSpade;
 
 public class ToolSpade extends ItemSpade implements IHasModel {

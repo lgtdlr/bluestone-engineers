@@ -4,7 +4,6 @@ import bluestone.Main;
 import bluestone.init.ModItems;
 import bluestone.util.IHasModel;
 import net.minecraft.item.ItemHoe;
-import net.minecraft.item.Item.ToolMaterial;
 
 public class ToolHoe extends ItemHoe implements IHasModel {
 

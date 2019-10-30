@@ -3,7 +3,6 @@ package bluestone.items.wearable;
 import bluestone.Main;
 import bluestone.init.ModItems;
 import bluestone.util.IHasModel;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemArmor;
 
