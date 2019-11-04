@@ -11,7 +11,6 @@ public class FluidBluestoneMagma extends Fluid {
 		this.setUnlocalizedName(name);
 		this.setViscosity(6000);
 		this.setLuminosity(5);
-		this.density = -1;
 	}
 
 }
