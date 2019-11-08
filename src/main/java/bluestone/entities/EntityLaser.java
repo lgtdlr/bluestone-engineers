@@ -3,39 +3,59 @@ package bluestone.entities;
 import java.util.Random;
 
 import bluestone.init.ModItems;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.block.state.IBlockState;
+import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.monster.EntityEnderman;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.entity.projectile.EntityArrow;
+import net.minecraft.init.Items;
+import net.minecraft.init.SoundEvents;
 import net.minecraft.item.ItemStack;
+import net.minecraft.network.play.server.SPacketChangeGameState;
+import net.minecraft.util.DamageSource;
 import net.minecraft.util.EnumParticleTypes;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.MathHelper;
+import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
 
 public class EntityLaser extends EntityArrow {
 
+	private int ticksInAir;
+	private int xTile;
+	private int yTile;
+	private int zTile;
+	private Block inTile;
+	private int inData;
+	private int knockbackStrength;
+
 	public EntityLaser(World worldIn) {
 		super(worldIn);
-		// TODO Auto-generated constructor stub
+		this.pickupStatus = EntityArrow.PickupStatus.DISALLOWED;
 	}
 
 	public EntityLaser(World worldIn, double x, double y, double z) {
 		super(worldIn, x, y, z);
-		// TODO Auto-generated constructor stub
+		this.pickupStatus = EntityArrow.PickupStatus.DISALLOWED;
 	}
 
 	public EntityLaser(World worldIn, EntityLivingBase shooter) {
 		super(worldIn, shooter);
-		// TODO Auto-generated constructor stub
+		this.pickupStatus = EntityArrow.PickupStatus.DISALLOWED;
 	}
 
 	@Override
 	protected ItemStack getArrowStack() {
-		// TODO Auto-generated method stub
-		return new ItemStack(ModItems.BLUESTONE_LASER);
+		return new ItemStack(Items.REDSTONE);
 	}
 
 	@Override
 	protected void arrowHit(EntityLivingBase living) {
-		// TODO Auto-generated method stub
 		super.arrowHit(living);
 		living.setGlowing(true);
 	}
@@ -83,7 +103,4 @@ public class EntityLaser extends EntityArrow {
 		}
 
 	}
-	
-	
-
 }

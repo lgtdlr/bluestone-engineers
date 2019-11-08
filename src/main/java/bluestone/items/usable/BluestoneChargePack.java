@@ -29,7 +29,7 @@ public class BluestoneChargePack extends ItemBase implements IHasModel {
 			if(playerIn.inventory.getStackInSlot(i).getDisplayName().equals("Redstone")||playerIn.inventory.getStackInSlot(i).getDisplayName().equals("Redstone Ore")) {
 				int refill = playerIn.inventory.getStackInSlot(i).getDisplayName().equals("Redstone") ? 2:10;
 				
-				Minecraft.getMinecraft().player.sendChatMessage(Integer.toString(item1.getItemDamage())); //TEST
+				Minecraft.getMinecraft().player.sendChatMessage(Integer.toString(50-item1.getItemDamage())+"/50"); //TEST
 				
 				if( item1.getItemDamage()>0 && item1.getItemDamage()<50 ){	
 					playerIn.inventory.decrStackSize(i, 1);
