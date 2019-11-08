@@ -7,6 +7,7 @@ import bluestone.items.ItemBase;
 import bluestone.items.projectiles.BluestoneLaser;
 import bluestone.items.usable.ToolAxe;
 import bluestone.items.usable.BluestoneBow;
+import bluestone.items.usable.BluestoneChargePack;
 import bluestone.items.usable.BluestoneGun;
 import bluestone.items.usable.ToolHoe;
 import bluestone.items.usable.ToolPickaxe;
@@ -55,5 +56,6 @@ public class ModItems {
 	public static final Item BLUESTONE_DUST = new ItemBase("bluestone_dust");
 	public static final Item BLUESTONE_INGOT = new ItemBase("bluestone_ingot");
 	public static final ItemArrow BLUESTONE_LASER = new BluestoneLaser("bluestone_laser");
+	public static final Item BLUESTONE_CHARGE_PACK = new BluestoneChargePack("bluestone_charge_pack");
 	
 }
