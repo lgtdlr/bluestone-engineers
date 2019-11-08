@@ -47,6 +47,7 @@ public class BluestoneGun extends ItemBow implements IHasModel {
 
                 if (this.isArrow(itemstack))
                 {
+                	if(itemstack.getItemDamage()<50)
                     return itemstack;
                 }
             }
@@ -57,7 +58,7 @@ public class BluestoneGun extends ItemBow implements IHasModel {
 	
 	@Override
 	protected boolean isArrow(ItemStack stack){
-        return (stack.getItem() == ModItems.BLUESTONE_LASER);
+        return (stack.getItem() == ModItems.BLUESTONE_CHARGE_PACK);
     }
 	
 	@Override
@@ -148,12 +149,9 @@ public class BluestoneGun extends ItemBow implements IHasModel {
 
                     if (!flag1 && !entityplayer.capabilities.isCreativeMode)
                     {
-                        itemstack.shrink(1);
+                       ModItems.BLUESTONE_CHARGE_PACK.setDamage(itemstack, itemstack.getItemDamage()+1);
 
-                        if (itemstack.isEmpty())
-                        {
-                            entityplayer.inventory.deleteStack(itemstack);
-                        }
+                        
                     }
 
                     entityplayer.addStat(StatList.getObjectUseStats(this));
