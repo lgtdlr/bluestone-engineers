@@ -12,6 +12,7 @@ item.bluestone_leggings.name=Bluestone Leggings
 item.bluestone_boots.name=Bluestone Boots
 item.bluestone_laser_gun.name=Bluestone Laser Gun
 item.bluestone_bow.name=Bluestone Bow
+item.bluestone_charge_pack.name=Bluestone Charge Pack
 
 //blocks
 tile.bluestone_block.name=Bluestone Block
