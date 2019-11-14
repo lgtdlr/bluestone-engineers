@@ -51,14 +51,12 @@ public class EntityLaser extends EntityArrow {
 	private void spawnParticles(int particleCount) {
 		Random rand = new Random();
 		int i = rand.nextInt(15);
-		double d0 = (double) (i >> 16 & 255) / 255.0D;
-		double d1 = (double) (i >> 8 & 255) / 255.0D;
-		double d2 = (double) (i >> 0 & 255) / 255.0D;
+		double zSpeed = (double) (i >> 0 & 255) / 255.0D;
 		for (int j = 0; j < particleCount; ++j) {
 			this.world.spawnParticle(EnumParticleTypes.REDSTONE,
 					this.posX + (this.rand.nextDouble() - 0.5D) * (double) this.width,
 					this.posY + this.rand.nextDouble() * (double) this.height,
-					this.posZ + (this.rand.nextDouble() - 0.5D) * (double) this.width, d0, d1, d2);
+					this.posZ + (this.rand.nextDouble() - 0.5D) * (double) this.width, 0.0, 0.0, zSpeed);
 		}
 	}
 
