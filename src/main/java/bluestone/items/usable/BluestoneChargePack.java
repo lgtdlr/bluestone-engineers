@@ -1,10 +1,10 @@
 package bluestone.items.usable;
 
-import bluestone.Main;
-import bluestone.init.ModItems;
+import java.util.List;
+
 import bluestone.items.ItemBase;
 import bluestone.util.IHasModel;
-import net.minecraft.client.Minecraft;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
@@ -34,7 +34,7 @@ public class BluestoneChargePack extends ItemBase implements IHasModel {
 				if( item1.getItemDamage()>0 && item1.getItemDamage()<50 ){	
 					playerIn.inventory.decrStackSize(i, 1);
 					item1.setItemDamage(item1.getItemDamage()-refill);
-					Minecraft.getMinecraft().player.sendChatMessage("Current Charge: " + Integer.toString(50-item1.getItemDamage()) +"/50"); //TEST
+					//Minecraft.getMinecraft().player.sendChatMessage("Current Charge: " + Integer.toString(50-item1.getItemDamage()) +"/50"); //TEST
 					return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, playerIn.getHeldItem(handIn));
 				}
 				else if(item1.getItemDamage()==0){
@@ -51,4 +51,12 @@ public class BluestoneChargePack extends ItemBase implements IHasModel {
 		
 
 	}
+	
+	@Override
+	public void addInformation(ItemStack stack, World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
+		super.addInformation(stack, worldIn, tooltip, flagIn);
+		tooltip.add("Charge: " + Integer.toString(50-stack.getItemDamage()) +"/50");
+	}
+	
+	
 }
