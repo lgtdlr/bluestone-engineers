@@ -3,15 +3,12 @@ package bluestone.init;
 import java.util.ArrayList;
 import java.util.List;
 
-import bluestone.Main;
 import bluestone.blocks.BluestoneBlock;
 import bluestone.blocks.BluestoneOre;
 import bluestone.blocks.BluestoneTorch;
 import bluestone.blocks.fluids.BluestoneMagma;
-import bluestone.items.ItemBase;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.item.Item;
 
 
 public class ModBlocks {

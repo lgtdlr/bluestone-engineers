@@ -1,9 +1,6 @@
 package bluestone.items.projectiles;
 
-import bluestone.Main;
 import bluestone.entities.EntityLaser;
-import bluestone.init.ModItems;
-import bluestone.util.IHasModel;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.projectile.EntityArrow;
 import net.minecraft.item.ItemArrow;

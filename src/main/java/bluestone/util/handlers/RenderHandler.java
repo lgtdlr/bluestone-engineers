@@ -29,7 +29,6 @@ public class RenderHandler {
 		ModelLoader.setCustomStateMapper(ModBlocks.BLUESTONE_MAGMA, new StateMapperBase() {
 			@Override
 			protected ModelResourceLocation getModelResourceLocation(IBlockState state) {
-				// TODO Auto-generated method stub
 				return new ModelResourceLocation(Reference.MOD_ID + ":bluestone_magma", "fluid");
 			}
 		});
@@ -42,7 +41,6 @@ public class RenderHandler {
 
 			@Override
 			public Render<? super EntityLaser> createRenderFor(RenderManager manager) {
-				// TODO Auto-generated method stub
 				return new RenderLaser(manager);
 			}
 			

@@ -9,12 +9,10 @@ public class RenderLaser extends RenderArrow<EntityLaser>{
 
 	public RenderLaser(RenderManager manager) {
 		super(manager);
-		// TODO Auto-generated constructor stub
 	}
 	
 	@Override
 	protected ResourceLocation getEntityTexture(EntityLaser entity) {
-		// TODO Auto-generated method stub
 		return new ResourceLocation(Reference.MOD_ID + ":textures/entity/arrows/bluestone_laser.png");
 	}
 
