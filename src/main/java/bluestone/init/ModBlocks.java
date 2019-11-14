@@ -20,4 +20,5 @@ public class ModBlocks {
 	public static final Block BLUESTONE_BLOCK = new BluestoneBlock("bluestone_block", Material.ROCK);
 	public static final Block BLUESTONE_TORCH = new BluestoneTorch("bluestone_torch", Material.REDSTONE_LIGHT);
 	public static final Block BLUESTONE_MAGMA = new BluestoneMagma("bluestone_magma", ModFluids.BLUESTONE_MAGMA, Material.LAVA);
+	public static final Block RICH_BLUESTONE_ORE = new BluestoneOre("rich_bluestone_ore", Material.ROCK);
 }

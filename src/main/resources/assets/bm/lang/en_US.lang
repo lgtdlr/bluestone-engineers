@@ -17,6 +17,7 @@ item.bluestone_charge_pack.name=Bluestone Charge Pack
 //blocks
 tile.bluestone_block.name=Bluestone Block
 tile.bluestone_ore.name=Bluestone Ore
+tile.rich_bluestone_ore.name=Rich Bluestone Ore
 tile.bluestone_torch.name=Bluestone Torch
 
 //fluids

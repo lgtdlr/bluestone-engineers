@@ -33,7 +33,7 @@ public class BluestoneOre extends BluestoneBlockBase {
 		setHardness(5.5F);
 		setResistance(15.0F);
 		setHarvestLevel("pickaxe", 2);
-		setLightLevel(1.0F);
+		//setLightLevel(1.0F);
 		
 
 //	}
