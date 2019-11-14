@@ -1,0 +1,6 @@
+{
+	"parent": "block/cube_all",
+	"textures": {
+		"all": "bm:blocks/rich_bluestone_ore"
+	}
+}

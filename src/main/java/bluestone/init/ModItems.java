@@ -50,7 +50,7 @@ public class ModItems {
 	public static final ItemAxe BLUESTONE_AXE = new ToolAxe("bluestone_axe", TOOL_MATERIAL_BLUESTONE);
 	public static final ItemHoe BLUESTONE_HOE = new ToolHoe("bluestone_hoe", TOOL_MATERIAL_BLUESTONE);
 	public static final ItemBow BLUESTONE_GUN = new BluestoneGun("bluestone_laser_gun");
-	public static final ItemBow Bluestone_Bow = new BluestoneBow("bluestone_bow");
+	public static final ItemBow BLUESTONE_BOW = new BluestoneBow("bluestone_bow");
 	
 	//Custom Items
 	public static final Item BLUESTONE_DUST = new ItemBase("bluestone_dust");
